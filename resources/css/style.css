@@ -1,0 +1,66 @@
+header {
+  display: flex; /* allows this parent to control the layout of its children - .logo & nav. tells browsers this language is being used */
+  position: fixed; /* creates a fixed top menu */
+  width: 100%; /* fill any remaining space */
+  height: 80px; /* extend length of menu */
+  border-bottom: 1px solid black; /* add small black border to bottom*/
+  background-color: white; /* makes menu background a different color than the contents'*/
+  font-family: Verdana; /* changes font for the menu*/
+  font-size: 14px; /* changes font size for the menu*/
+  font-weight: bold; /* makes menu font bold*/
+  align-items: center; /* centers nav links vertically */ /* Why do we need to align the .logo since it's a child of header? */
+  z-index: 1; /* put menu in front of other elements */
+}
+
+.logo{
+  display: flex; /* makes .logo a flex container (still child of header flex container) */
+  flex-grow: 1; /* forces nav to the right b/c the flex grow factor of a flex item is relative to the size of the other children in the flex-container*/
+  padding-left: 30px; /* indents the logo */
+  align-items: center; /* centers text vertically, but why do this again?????????????? */
+}
+
+.logo img{
+    margin-right: 12px; /* separates the logo from name */
+}
+
+}
+.logo span{
+  color: MediumAquamarine; /* why doesn't this work?!????????? */
+}
+
+nav{
+  margin-right: 40px; /* indents links from end of page */
+  padding: 20px 10px; /* adds padding around entire navigation */
+  display: block; /* why do i need this??????????????? */
+}
+
+nav span{ /* why do i need these spans? can't i just use a href????????????? */
+  display: inline-block;
+  padding: 20px 10px; /* adds padding around each link */
+}
+
+a{
+  color: black
+}
+
+.content{
+  padding-top: 116px;
+}
+
+.column-large {
+  display: flex
+  width: 630px;
+  margin-right: 32px;
+}
+
+.column-medium {
+  width: 300px;
+}
+
+.column-small {
+  width: 240px;
+}
+
+div{
+  border: 1px solid black;
+}
