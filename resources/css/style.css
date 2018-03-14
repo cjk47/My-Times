@@ -1,47 +1,44 @@
+/* HEADER */
+
 header {
-  display: flex; /* allows this parent to control the layout of its children - .logo & nav. tells browsers this language is being used */
-  position: fixed; /* creates a fixed top menu */
-  width: 100%; /* fill any remaining space */
-  height: 80px; /* extend length of menu */
-  border-bottom: 1px solid black; /* add small black border to bottom*/
-  background-color: white; /* makes menu background a different color than the contents'*/
-  font-family: Verdana; /* changes font for the menu*/
-  font-size: 14px; /* changes font size for the menu*/
-  font-weight: bold; /* makes menu font bold*/
-  align-items: center; /* centers nav links vertically */ /* Why do we need to align the .logo since it's a child of header? */
-  z-index: 1; /* put menu in front of other elements */
+  display: flex; /* allows this parent to control the layout of its children, .logo & nav. */
+  align-items: center;
+  z-index: 1; /* places menu in front of other elements when scrolling */
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  border-bottom: 1px solid black;
+  background-color: white;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .logo{
-  display: flex; /* makes .logo a flex container (still child of header flex container) */
+  display: flex; /* Why do I need another display:flex? */
   flex-grow: 1; /* forces nav to the right b/c the flex grow factor of a flex item is relative to the size of the other children in the flex-container*/
-  padding-left: 30px; /* indents the logo */
+  margin-left: 30px;
   align-items: center; /* centers text vertically, but why do this again?????????????? */
 }
 
-.logo img{
-    margin-right: 12px; /* separates the logo from name */
+.logo img{ /* actual logo image */
+    margin-right: 12px;
 }
 
-}
-.logo span{
-  color: MediumAquamarine; /* why doesn't this work?!????????? */
+.logo span{ /* site name */
+  color: MediumAquamarine;
 }
 
 nav{
-  margin-right: 40px; /* indents links from end of page */
-  padding: 20px 10px; /* adds padding around entire navigation */
-  display: block; /* why do i need this??????????????? */
+  margin-right: 40px;
 }
 
-nav span{ /* why do i need these spans? can't i just use a href????????????? */
-  display: inline-block;
+nav a{
   padding: 20px 10px; /* adds padding around each link */
+  color: black;
 }
 
-a{
-  color: black
-}
+/* CONTENT */
 
 .content{
   padding-top: 116px;
@@ -54,7 +51,6 @@ a{
   display: block;
   width: 630px;
   margin-right: 32px;
-  border: 1px solid black;
 }
 
 .column-medium {
@@ -107,8 +103,4 @@ a{
   font-size: 30px;
   color: white;
   text-align: center;
-}
-
-div{
-  border: 1px solid black;
 }
