@@ -1,4 +1,4 @@
-/* HEADER */
+/* ------ HEADER ------ */
 
 header {
   display: flex; /* allows this parent to control the layout of its children, .logo & nav. */
@@ -38,28 +38,19 @@ nav a{
   color: black;
 }
 
-/* CONTENT */
+/* ------ CONTENT ------ */
 
 .content{
   padding-top: 116px;
   display: flex;
   height: 100%;
-  justify-content:center;
+  justify-content: center;
 }
 
 .column-large {
   display: block;
   width: 630px;
   margin-right: 32px;
-}
-
-.column-medium {
-  width: 300px;
-  margin-right: 30px;
-}
-
-.column-small {
-  width: 240px;
 }
 
 .image-content{
@@ -94,6 +85,11 @@ nav a{
   text-align: center;
 }
 
+.column-medium {
+  width: 300px;
+  margin-right: 30px;
+}
+
 .cat-image-content{
   background-image: url("/Users/craigkleila/Desktop/mytimes/resources/images/img-story-1.png");
   height: 300px;
@@ -103,4 +99,20 @@ nav a{
   font-size: 30px;
   color: white;
   text-align: center;
+}
+
+.column-small {
+  width: 240px;
+}
+
+.stories{
+  display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.story{
+  display: flex;
+    flex-direction: column;
+    width: 300px;
 }
